@@ -1,0 +1,115 @@
+body {
+  background-image: url(../images/CatalinaSunset.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  /* margin: 0;
+  padding: 0; */
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-position: center center;
+  /* background-repeat: no-repeat; */
+  /* top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; */
+  font-family: "Englebert", cursive !important;
+  font-weight: 600 !important;
+  font-style: normal !important;
+  
+}
+
+
+
+.row {
+  /* display: flex;
+  flex-wrap: wrap; */
+  width: 100%;
+  padding: 20px;
+  /* font-family: "Englebert", cursive;
+  font-weight: 400;
+  font-style: normal; */
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;  
+}
+
+/* Had to override the Mui navbar font*/
+.MuiListItemText-primary {
+  font-family: "Englebert", cursive !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: 1.5em !important;
+  color: #674486;
+
+}
+
+/* Had to override the Mui navbar background color*/
+.MuiDrawer-paper {
+  background-color: #feb29d !important;
+  opacity: .9;
+  /* border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%; */
+  border-radius: 10%;
+}
+
+MenuIcon {
+  color: black;
+}
+
+.pic-container {
+  max-width: 25% !important;
+}
+
+.profileImg {
+  border-radius: 50%;
+  max-width: 100%;
+  background-color: rgb(255, 215, 0, .6);
+  box-shadow: rgb(255, 215, 0, .6)  0 0 40px 25px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.name {
+  font-family: "Cabin Sketch", sans-serif;
+  font-weight: 700;
+  font-style: normal; 
+  font-size: 4.5em;
+  animation: glow 2s ease-in-out infinite alternate;
+  color: #654284;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 20px #8504f5;
+  }
+  to {
+    text-shadow: 0 0 30px #ff2483, 0 0 10px;
+  }
+}
+/* @keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+  28%,
+  33% {
+    color: #ff65bd;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #ff2483;
+    text-shadow: none;
+  }
+} */

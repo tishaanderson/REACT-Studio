@@ -1,11 +1,11 @@
 // Bringing in the required import from 'react-router-dom'
 import { Outlet, useLocation } from 'react-router-dom';
-// import Header from './components/Header';
-// import Footer from './components/Footer';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import CssBaseline from '@mui/material/CssBaseline';
 
-// import './styles/all.css'
-// import ProfileImage from './components/ProfileImg';
+import './styles/all.css'
+import ProfileImage from './components/ProfileImg';
 
 
 function App() {
