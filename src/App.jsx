@@ -13,9 +13,9 @@ function App() {
   // The Outlet component will conditionally swap between the different pages according to the URL
   return (
     <>
-      
+      <CssBaseline />
       <div className="row">
-        <CssBaseline />
+        
         <Header currentPage={currentPage} />
         <ProfileImage />
         <main className="col-md-6 col-sm-12">

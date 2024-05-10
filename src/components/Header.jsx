@@ -30,7 +30,7 @@ function Header( { currentPage }) {
 
   return (
     <header className="header">
-      <h1>{ headerContent }</h1>
+      <h1 className="header-title">{ headerContent }</h1>
       <Navbar />
     </header>
   );

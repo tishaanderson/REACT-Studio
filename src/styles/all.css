@@ -31,9 +31,27 @@ body {
 
 }
 
+@media screen and (max-width: 323px) {
+  .row {
+    padding-left: 10px;
+  }
+  
+}
+
 .header {
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
+  /* padding-bottom: 5% !important; */
+  position: fixed;
+  /* height: 4rem; */
+  z-index: 1000;
+  /* background-color: blue; */
+  /* padding-top: 1rem; */
+
+}
+
+.header-title {
+  color: #16275b;
 }
 
 /* Had to override the Mui navbar font*/
@@ -55,24 +73,31 @@ body {
   border-radius: 10%;
 }
 
-MenuIcon {
-  color: black;
-}
-
 .pic-container {
   max-width: 25% !important;
+  /* padding-left: 15%; */
+  margin: 3%;
+  padding-top: 4rem;
+  position: sticky;
 }
 
 .profileImg {
   border-radius: 50%;
   max-width: 100%;
   background-color: rgb(255, 215, 0, .6);
-  box-shadow: rgb(255, 215, 0, .6)  0 0 40px 25px;
+  box-shadow: rgb(255, 215, 0, .6)  0 0 1.6rem 1rem;
+}
+
+.profileImg:hover {
+  transform: rotate(360deg) scale(.5);
+  transition: transform .5s;
 }
 
 main {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 2rem;
+  /* width: 100%; */
 }
 
 .name {
@@ -80,7 +105,7 @@ main {
   font-weight: 700;
   font-style: normal; 
   font-size: 4.5em;
-  animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 1.5s ease-in-out infinite alternate;
   color: #654284;
 }
 
@@ -92,24 +117,30 @@ main {
     text-shadow: 0 0 30px #ff2483, 0 0 10px;
   }
 }
-/* @keyframes blink {
-  0%,
-  22%,
-  36%,
-  75% {
-    color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-  }
-  28%,
-  33% {
-    color: #ff65bd;
-    text-shadow: none;
-  }
-  82%,
-  97% {
-    color: #ff2483;
-    text-shadow: none;
+
+.title {
+  direction: rtl;
+  position: relative;
+}
+
+.dev {
+  color: #644487;
+}
+
+.jr-status {
+  color: #ff2483;
+}
+
+/* .underscore {
+  display: inline-block;
+  animation: blink 1s infinite step-end;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
   }
 } */
