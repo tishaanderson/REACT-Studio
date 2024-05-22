@@ -143,16 +143,22 @@ main {
   
 }
 
-/* .underscore {
-  display: inline-block;
-  animation: blink 1s infinite step-end;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.about-me {
+  background-color: rgb(22, 39, 91, .6);
+  padding: .8em;
+  border-radius: 2em;
+  transform: rotate(-5deg);
 }
 
-@keyframes blink {
-  50% {
-    opacity: 0;
+@media screen and (max-width: 380px) {
+  .about-me {
+    padding-left: 1.9em;
   }
-} */
+  
+}
+
+.about-me-p {
+  color: #e28743;
+  font-size: 1.3em;
+  text-shadow: 5px 5px 5px rgb(112, 2, 2);
+}
