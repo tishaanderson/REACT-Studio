@@ -6,7 +6,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 
 import './styles/all.css'
 import ProfileImage from './components/ProfileImg';
-
+import NameTitle from './components/Title';
 
 function App() {
   const currentPage = useLocation().pathname;
@@ -19,6 +19,7 @@ function App() {
         <Header currentPage={currentPage} />
         <ProfileImage />
         <main className="col-md-6 col-sm-12">
+        <NameTitle />
           <Outlet />
         </main>
         <Footer />

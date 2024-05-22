@@ -131,6 +131,18 @@ main {
   color: #ff2483;
 }
 
+.blinking-underscore {
+  display:inline;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  
+}
+
 /* .underscore {
   display: inline-block;
   animation: blink 1s infinite step-end;

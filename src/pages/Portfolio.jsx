@@ -4,13 +4,18 @@ import dailyPlanner from '../images/work-planner.png'
 import project1 from '../images/Taste-Buds-Unite.png'
 import project2 from '../images/PlantPal.png'
 import techTalk from '../images/TechTalk.png'
-
+// import NameTitle from "../components/Title";
 
 // import '../styles/Portfolio.css'
 import { Link } from 'react-router-dom'
 
 export default function Portfolio() {
   return (
+<>
+
+{/* <NameTitle /> */}
+
+    
     <div className='portfolio'>
       <div className='half-page'>
         <div className="card">
@@ -116,5 +121,7 @@ export default function Portfolio() {
         
       </div>
     </div>
+
+</>
   );
 }
