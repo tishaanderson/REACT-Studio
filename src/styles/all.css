@@ -143,16 +143,35 @@ main {
   
 }
 
-.about-me {
+.about-me, .portfolio {
   background-color: rgb(22, 39, 91, .6);
   padding: .8em;
   border-radius: 2em;
   transform: rotate(-5deg);
+  margin-top: 1em;
+  animation: slideIn .5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.portfolio {
+  transform: rotate(5deg);
 }
 
 @media screen and (max-width: 380px) {
   .about-me {
-    padding-left: 1.9em;
+    margin-left: 3em;
+    font-size: .8em;
   }
   
 }
@@ -162,3 +181,16 @@ main {
   font-size: 1.3em;
   text-shadow: 5px 5px 5px rgb(112, 2, 2);
 }
+
+
+.p-card {
+  padding: .3em;
+  margin: .8em;
+  opacity: .7;
+  background-color: #d57ea5 !important;
+}
+
+.coding-info {
+  width: 75%;
+}
+
