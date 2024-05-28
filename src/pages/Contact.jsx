@@ -3,6 +3,8 @@ import emailjs from '@emailjs/browser';
 import React, { useRef } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import pinkArrow from "../images/pinkArrow.json"
+import Lottie from "lottie-react"
 
 const notify = () => {
   toast.success(' Message sent successfully!✌🏻', {
@@ -40,6 +42,14 @@ export default function Contact() {
 
   return (
     <div className='contact'>
+
+      {/* <section className='social-arrow'>
+        <Lottie animationData={pinkArrow} className='pinkArrow'/>
+      </section> */}
+
+
+      
+
       <section className="contact-box">
 
         <h2 className="h1-responsive font-weight-bold text-center" id='contact-me'>Contact Me :) </h2>
@@ -94,6 +104,7 @@ export default function Contact() {
         </div>
       </section>
       <ToastContainer />
+      
     </div>
   );
 }

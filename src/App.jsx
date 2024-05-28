@@ -22,7 +22,7 @@ function App() {
         <NameTitle />
           <Outlet />
         </main>
-        <Footer />
+        <Footer currentPage={currentPage}/>
       </div>
             
       

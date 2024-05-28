@@ -253,3 +253,45 @@ main {
   background-color: red;
 }
 
+.footer {
+  bottom: 0;
+  display: flex;
+}
+
+.footer-icons {
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+}
+
+/* .footer-arrow {
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  flex: 2;
+} */
+
+.socials {
+  font-size: 2em;
+  padding: .1em;
+  color: #16275b;
+  transition: transform .5s ease-in-out, color .5s ease-in-out !important;
+}
+
+.socials:hover{
+  transform: scale(1.5) !important;
+  color: red;
+}
+
+/* .pinkArrow {
+ height: 100%;
+ margin-left: -10em;
+} */
+
+/* .arrow {
+  height: 100px;
+  bottom: 0;
+  padding: 0 !important;
+  margin: 0 !important;
+} */
