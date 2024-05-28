@@ -1,4 +1,5 @@
 // import '../styles/Resume.css';
+import resume from '../../public/TishaAndersonResume.pdf'
 
 export default function Resume() {
   const education = [
@@ -94,6 +95,16 @@ export default function Resume() {
 
   return (
     <div className="resume">
+
+      <div className="resume-download">
+        <a href={resume} download>
+          <button className='download-button'>
+            Click to Download My Resume
+          </button>
+        </a>
+      </div>
+
+
       <div className="resume-card" id="education-section">
         <h3 className="resume-section">Education</h3>
         {education.map((edu, index) => (
@@ -164,6 +175,7 @@ export default function Resume() {
             ))}
           </ul>
         </div>
+
       </div>
     </div>
   );

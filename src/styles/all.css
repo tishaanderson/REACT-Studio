@@ -143,7 +143,7 @@ main {
   
 }
 
-.about-me, .portfolio, .resume {
+.about-me, .portfolio {
   background-color: rgb(22, 39, 91, .6);
   padding: .8em;
   border-radius: 2em;
@@ -194,10 +194,9 @@ main {
   width: 75%;
 }
 
-.resume {
-  background-color: transparent;
-}
-
+/* .resume {
+  animation: slideIn .5s ease-out;
+} */
 .resume-card {
   background-color: rgb(22, 39, 91, .6);
   color: #b58bdf;
@@ -206,21 +205,51 @@ main {
   border-radius: 2em;
   margin-bottom: .5em;
   overflow: hidden;
+  animation: slideIn .5s ease-in;
 }
 
-.resume-card h3,
-.resume-card h6,
-.resume-card p,
-.resume-card li {
-  transition: all .3s ease-in-out;
-  display: inline-block;
-  word-wrap: break-word;
+#education-section,
+#experience-section,
+#skills-section {
+  transition: all .5s ease-in-out;
 }
 
-.resume-card h3:hover,
-.resume-card h6:hover,
-.resume-card p:hover,
-.resume-card li:hover {
+#education-section:hover,
+#experience-section:hover,
+#skills-section:hover {
+  transform: scale(1.25);
+  background-color: rgb(22, 39, 91, .9);
+}
+
+@media screen and (max-width: 768px) {
+
+  #education-section,
+  #experience-section,
+  #skills-section {
+    margin-left: 1em;
+  }
+
+  #education-section:hover,
+  #experience-section:hover,
+  #skills-section:hover {
+    transform: scale(1.06);
+    background-color: rgb(22, 39, 91, .9);
+  }
+}
+
+.resume-download {
+  text-align: center;
+  margin: 1em;
+}
+
+.download-button {
+  background-color: #e28743;
+  border-radius: .5em;
+  transition: all .5s ease-in-out;
+}
+
+.download-button:hover {
   transform: scale(1.5);
+  background-color: red;
 }
 
