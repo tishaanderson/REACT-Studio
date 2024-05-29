@@ -5,7 +5,7 @@ import project1 from "../images/Taste-Buds-Unite.png";
 // import techTalk from "../images/TechTalk.png";
 import plantPal from "../images/plantPal3.png";
 
-// import '../styles/Portfolio.css'
+import '../styles/pageStyles/Portfolio.css';
 
 export default function Portfolio() {
   const projects = [
@@ -47,7 +47,7 @@ export default function Portfolio() {
       <div className="portfolio">
         <div className="half-page">
           {projects.map((project, index) => (
-            <div key={index} className="card p-card">
+            <div key={index} className="card project-card">
               <a href={project.deployed} target="_blank">
                 <img
                   src={project.image}

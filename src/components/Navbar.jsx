@@ -17,6 +17,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import MenuIcon from '@mui/icons-material/Menu';
+import '../styles/componentStyles/Navbar.css';
 
 function Navbar() {
   const [state, setState] = React.useState({

@@ -1,0 +1,17 @@
+/* Had to override the Mui navbar font*/
+.MuiListItemText-primary {
+  font-family: "Englebert", cursive !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: 1.5em !important;
+  color: #674486;
+}
+
+/* Had to override the Mui navbar background color*/
+.MuiDrawer-paper {
+  background-color: #feb29d !important;
+  opacity: .9;
+  /* border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%; */
+  border-radius: 10%;
+}

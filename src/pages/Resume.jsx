@@ -1,5 +1,6 @@
 // import '../styles/Resume.css';
-import resume from '../../public/TishaAndersonResume.pdf'
+import resume from '../../public/TishaAndersonResume.pdf';
+import '../styles/pageStyles/Resume.css';
 
 export default function Resume() {
   const education = [

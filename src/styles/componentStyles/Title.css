@@ -1,0 +1,41 @@
+.name {
+  font-family: "Cabin Sketch", sans-serif;
+  font-weight: 700;
+  font-style: normal; 
+  font-size: 4.5em;
+  animation: glow 1.5s ease-in-out infinite alternate;
+  color: #654284;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 20px #8504f5;
+  }
+  to {
+    text-shadow: 0 0 30px #ff2483, 0 0 10px;
+  }
+}
+
+.title {
+  direction: rtl;
+  position: relative;
+}
+
+.dev {
+  color: #644487;
+}
+
+.jr-status {
+  color: #ff2483;
+}
+
+.blinking-underscore {
+  display:inline;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

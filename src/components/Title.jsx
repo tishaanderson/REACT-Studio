@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import '../styles/componentStyles/Title.css'
 
 function NameTitle() {
   const [titleText, setTitleText] = useState("");

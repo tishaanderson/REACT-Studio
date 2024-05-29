@@ -1,5 +1,5 @@
 // Here we are importing a CSS file as a dependency
-// import '../styles/Footer.css';
+import '../styles/componentStyles/Footer.css';
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa6";
 import footerArrow from "../images/footerArrow.json";
 import Lottie from "lottie-react";

@@ -1,5 +1,6 @@
 import React from "react";
 import profileImg from '../images/profileImg.png';
+import '../styles/componentStyles/ProfileImage.css';
 
 function ProfileImage() {
   return (

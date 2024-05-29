@@ -1,0 +1,19 @@
+.pic-container {
+  max-width: 25% !important;
+  /* padding-left: 15%; */
+  margin: 3%;
+  padding-top: 4rem;
+  position: sticky;
+}
+
+.profileImg {
+  border-radius: 50%;
+  max-width: 100%;
+  background-color: rgb(255, 215, 0, .6);
+  box-shadow: rgb(255, 215, 0, .6)  0 0 1.6rem 1rem;
+}
+
+.profileImg:hover {
+  transform: rotate(360deg) scale(.5);
+  transition: transform .5s;
+}

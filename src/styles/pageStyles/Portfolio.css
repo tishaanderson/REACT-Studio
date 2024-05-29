@@ -1,0 +1,30 @@
+.portfolio {
+  background-color: rgb(22, 39, 91, .6);
+  padding: .8em;
+  border-radius: 2em;
+  transform: rotate(5deg);
+  margin-top: 1em;
+  animation: slideIn .5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.project-card {
+  padding: .3em;
+  margin: .8em;
+  opacity: .7;
+  background-color: #d57ea5 !important;
+}
+
+.coding-info {
+  width: 75%;
+}
