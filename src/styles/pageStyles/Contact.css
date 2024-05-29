@@ -1,0 +1,89 @@
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.job-search,
+.socials-check {
+  margin-right: .5em;
+  flex: 1;
+}
+
+.job-search,
+.socials-check,
+.contact-box {
+  background-color: rgb(213, 126, 165, .6);
+  border-radius: 1.5em;
+}
+
+.job-interest {
+  margin: 1em;
+  text-align: center;
+}
+
+.socials-title {
+  text-align: center;
+  margin-top: .5em;
+}
+
+.flex-socials {
+  display: flex;
+}
+
+.social-icons {
+  /* flex: 1; */
+  margin-left: 1em;
+  margin-top: .2em;
+  font-size: 2em;
+}
+
+.contact-box {
+  margin-top: .5em;
+  margin-left: .6em;
+}
+
+form {
+  border-radius: 1.5em;
+}
+
+.contactMe {
+  margin-top: .3em;
+}
+
+.messageMe {
+  text-decoration: underline;
+}
+
+.thanks {
+  text-align: center;
+  margin-bottom: -1em;
+}
+
+.sendButton {
+  background-color: black;
+  border: none;
+  margin-bottom: .5em;
+  height: 2em;
+}
+
+
+@media screen and (max-width: 472px) {
+  .flex-socials {
+    flex-direction: column;
+  }
+  
+  .arrow {
+    transform: rotate(90deg);
+  }
+
+  .job-search,
+  .socials-check {
+    margin: .2em;
+  }
+
+  .social-icons {
+    margin-left: .5em;
+  }
+}
+
+
