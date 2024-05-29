@@ -2,31 +2,17 @@ body {
   background-image: url(../images/CatalinaSunset.jpg);
   background-size: cover;
   background-attachment: fixed;
-  /* margin: 0;
-  padding: 0; */
   min-height: 100vh;
   overflow-x: hidden;
   background-position: center center;
-  /* background-repeat: no-repeat; */
-  /* top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; */
   font-family: "Englebert", cursive !important;
   font-weight: 600 !important;
   font-style: normal !important;
 }
 
-
-
 .row {
-  /* display: flex;
-  flex-wrap: wrap; */
   width: 100%;
   padding: 20px;
-  /* font-family: "Englebert", cursive;
-  font-weight: 400;
-  font-style: normal; */
 }
 
 @media screen and (max-width: 323px) {
@@ -39,5 +25,4 @@ main {
   display: flex;
   flex-wrap: wrap;
   padding-top: 2rem;
-  /* width: 100%; */
 }

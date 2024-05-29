@@ -1,4 +1,3 @@
-// import '../styles/Resume.css';
 import resume from '../../public/TishaAndersonResume.pdf';
 import '../styles/pageStyles/Resume.css';
 

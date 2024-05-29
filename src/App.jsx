@@ -22,10 +22,8 @@ function App() {
         <NameTitle />
           <Outlet />
         </main>
-        <Footer currentPage={currentPage}/>
+        <Footer/>
       </div>
-            
-      
     </>
   );
 }

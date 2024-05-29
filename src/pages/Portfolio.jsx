@@ -1,8 +1,6 @@
-// import horiseon from "../images/horiseon-icon.png";
 import codingGame from "../images/Coding-Quiz-Game.png";
 import dailyPlanner from "../images/work-planner.png";
 import project1 from "../images/Taste-Buds-Unite.png";
-// import techTalk from "../images/TechTalk.png";
 import plantPal from "../images/plantPal3.png";
 
 import '../styles/pageStyles/Portfolio.css';

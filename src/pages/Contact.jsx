@@ -1,14 +1,13 @@
-// import '../styles/Contact.css';
 import emailjs from "@emailjs/browser";
 import React, { useRef, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import pinkArrow from "../images/pinkArrow.json";
-import footerArrow from "../images/footerArrow.json";
-
 import Lottie from "lottie-react";
-import "../styles/pageStyles/Contact.css";
+
+import footerArrow from "../images/Arrow.json";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa6";
+
+import "../styles/pageStyles/Contact.css";
 
 const notifySuccess = () => {
   toast.success(" Message sent!✌🏻", {

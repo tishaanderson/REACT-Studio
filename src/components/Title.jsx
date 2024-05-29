@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import '../styles/componentStyles/Title.css'
+
+import "../styles/componentStyles/Title.css";
 
 function NameTitle() {
   const [titleText, setTitleText] = useState("");
@@ -19,7 +20,7 @@ function NameTitle() {
       // waits for a delay before typing out the subtitle
       setTimeout(() => {
         typeOutText("::Junior Status::", setSubTitleText);
-      }, 500); 
+      }, 500);
     }
   }, [typingCompleted]);
 
@@ -37,8 +38,10 @@ function NameTitle() {
 
   return (
     <div>
-      <h2 className='name' id='firstName'>Tisha <span id='lastName'>Anderson</span> </h2>   
-      <h3 className='title' id="title">
+      <h2 className="name" id="firstName">
+        Tisha <span id="lastName">Anderson</span>{" "}
+      </h2>
+      <h3 className="title" id="title">
         <span className="dev">
           {titleText}
           <span className="blinking-underscore">&#95;</span>
@@ -46,7 +49,9 @@ function NameTitle() {
         <br />
         <span className="jr-status">
           {subTitleText}
-          {typingCompleted && <span className="blinking-underscore">&#95;</span>}
+          {typingCompleted && (
+            <span className="blinking-underscore">&#95;</span>
+          )}
         </span>
       </h3>
     </div>

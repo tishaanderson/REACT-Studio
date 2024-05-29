@@ -1,33 +1,32 @@
-// Here we are importing a CSS file as a dependency
-import '../styles/componentStyles/Header.css';
+import "../styles/componentStyles/Header.css";
 import Navbar from "./Navbar";
 
-function Header( { currentPage }) {
-  let headerContent = '';
+function Header({ currentPage }) {
+  let headerContent = "";
 
   switch (currentPage) {
-    case '/':
-      headerContent = 'Home';
+    case "/":
+      headerContent = "Home";
       break;
-    case '/About':
-      headerContent = 'About';
+    case "/About":
+      headerContent = "About";
       break;
-    case '/Portfolio':
-      headerContent = 'Portfolio';
+    case "/Portfolio":
+      headerContent = "Portfolio";
       break;
-    case '/Resume':
-      headerContent = 'Resume';
+    case "/Resume":
+      headerContent = "Resume";
       break;
-    case '/Contact':
-      headerContent = 'Contact';
+    case "/Contact":
+      headerContent = "Contact";
       break;
     default:
-      headerContent = '';
-  }  
+      headerContent = "";
+  }
 
   return (
     <header className="header">
-      <h1 className="header-title">{ headerContent }</h1>
+      <h1 className="header-title">{headerContent}</h1>
       <Navbar />
     </header>
   );

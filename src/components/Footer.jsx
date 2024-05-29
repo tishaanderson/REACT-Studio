@@ -1,11 +1,7 @@
-// Here we are importing a CSS file as a dependency
-import '../styles/componentStyles/Footer.css';
+import "../styles/componentStyles/Footer.css";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa6";
-import footerArrow from "../images/footerArrow.json";
-import Lottie from "lottie-react";
 
-function Footer({ currentPage }) {
-  const isContactPage = currentPage === "/Contact";
+function Footer() {
   return (
     <footer className="footer">
       <div className="footer-icons">
@@ -35,16 +31,10 @@ function Footer({ currentPage }) {
         >
           <FaInstagram />
         </a>
-
-        
       </div>
-      {/* <div className="footer-arrow">
-        {isContactPage && (
-          <Lottie animationData={footerArrow} className="arrow" />
-        )}
-      </div> */}
-
-
+      <div className="footer-arrow">
+        <p className="madeWithLove">Made with ❤️ by TEA</p>
+      </div>
     </footer>
   );
 }

@@ -11,7 +11,5 @@
 .MuiDrawer-paper {
   background-color: #feb29d !important;
   opacity: .9;
-  /* border-top-left-radius: 10%;
-  border-bottom-left-radius: 10%; */
   border-radius: 10%;
 }

@@ -1,12 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  /* padding-bottom: 5% !important; */
   position: fixed;
-  /* height: 4rem; */
-  z-index: 1000;
-  /* background-color: blue; */
-  /* padding-top: 1rem; */
 }
 
 .header-title {
