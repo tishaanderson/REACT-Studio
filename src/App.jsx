@@ -18,7 +18,7 @@ function App() {
         
         <Header currentPage={currentPage} />
         <ProfileImage />
-        <main className="col-md-6 col-sm-9">
+        <main className="col-md-6">
         <NameTitle />
           <Outlet />
         </main>

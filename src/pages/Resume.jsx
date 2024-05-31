@@ -1,5 +1,5 @@
-import resume from '../../public/TishaAndersonResume.pdf';
-import '../styles/pageStyles/Resume.css';
+import resume from "../../public/TishaAndersonResume.pdf";
+import "../styles/pageStyles/Resume.css";
 
 export default function Resume() {
   const education = [
@@ -64,7 +64,7 @@ export default function Resume() {
       "Quality Assurance",
       "Applied Behavior Analysis",
     ],
-    programmingLanguages: [
+    programming: [
       "HTML",
       "CSS",
       "JavaScript",
@@ -77,14 +77,19 @@ export default function Resume() {
       "jQuery",
       "Express.js",
       "GraphQL",
+      "REACT",
+      "Node.js",
+      "MVC",
+      "Handlebars.js",
     ],
-    coding: ["REACT", "Node.js", "MVC", "Handlebars.js"],
+    // coding: ["REACT", "Node.js", "MVC", "Handlebars.js"],
     personalStrengths: [
       "Problem Solving",
       "Strategic Decision Making",
       "Reinforcement Strategies",
-      "Organization and Time Management",
-      "SOPs",
+      "Organization",
+      "Time Management",
+      "SOP Development",
       "Streamlining Processes",
       "Cost-Savings Strategies",
       "Developing Quality Standards",
@@ -95,15 +100,13 @@ export default function Resume() {
 
   return (
     <div className="resume">
-
       <div className="resume-download">
         <a href={resume} download>
-          <button className='download-button'>
+          <button className="download-button">
             Click to Download My Resume
           </button>
         </a>
       </div>
-
 
       <div className="resume-card" id="education-section">
         <h3 className="resume-section">Education</h3>
@@ -134,48 +137,54 @@ export default function Resume() {
         ))}
       </div>
 
-      <div className="resume-card" id="skills-section">
+      <div className="resume-card">
         <h3 className="resume-section">Skills</h3>
-        <div className="skills-container">
-          <ul className="skills">
-            <h5 className="skill-type">Fields:</h5>
-            {skills.fields.map((field, index) => (
-              <li key={index} className="skill-list">
-                {field}
-              </li>
-            ))}
-          </ul>
-          <ul className="skills">
-            <h5 className="skill-type">Programming Languages:</h5>
-            {skills.programmingLanguages.map((language, index) => (
-              <li key={index} className="skill-list">
-                {language}
-              </li>
-            ))}
-          </ul>
-          <ul className="skills">
+
+        <div className="all-skills">
+          <div className="skills" id="fields-div">
+            <h6 className="skill-title">Fields:</h6>
+            <ul className="skills-list" id="fields-list">
+              {skills.fields.map((field, index) => (
+                <ul key={index} className="skill-bullet" id="fields-bullet">
+                  {field}
+                </ul>
+              ))}
+            </ul>
+          </div>
+
+          <div className="skills" id="programming-div">
+            <h6 className="skill-title">Programming:</h6>
+            <ul className="skills-list" id="programming-list">
+              {skills.programming.map((language, index) => (
+                <ul key={index} className="skill-bullet">
+                  {language}
+                </ul>
+              ))}
+            </ul>
+          </div>
+
+          <div className="skills" id="personal-div">
+            <h6 className="skill-title">
+              Personal Strengths:
+            </h6>
+            <ul className="skills-list" id="personal-list">
+              {skills.personalStrengths.map((strength, index) => (
+                <ul key={index} className="skill-bullet">
+                  {strength}
+                </ul>
+              ))}
+            </ul>
+          </div>
+
+          {/* <ul className="skills">
             <h5 className="skill-type">Coding:</h5>
             {skills.coding.map((code, index) => (
               <li key={index} className="skill-list">
                 {code}
               </li>
             ))}
-          </ul>
+          </ul> */}
         </div>
-
-        <div>
-          <h5 className="skill-type" id="personal-skills">
-            Personal Strengths:
-          </h5>
-          <ul className="skills">
-            {skills.personalStrengths.map((strength, index) => (
-              <li key={index} className="skill-list">
-                {strength}
-              </li>
-            ))}
-          </ul>
-        </div>
-
       </div>
     </div>
   );

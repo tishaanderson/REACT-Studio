@@ -7,35 +7,26 @@
   margin-bottom: .5em;
   overflow: hidden;
   animation: slideIn .5s ease-in;
-}
-
-#education-section,
-#experience-section,
-#skills-section {
   transition: all .5s ease-in-out;
 }
 
-#education-section:hover,
-#experience-section:hover,
-#skills-section:hover {
+.resume-card:hover {
   transform: scale(1.25);
   background-color: rgb(22, 39, 91, .9);
 }
 
-@media screen and (max-width: 768px) {
+.job-years {
+  border-top: solid 2px;
+  padding-top: 1em;
+}
 
-  #education-section,
-  #experience-section,
-  #skills-section {
-    margin-left: 1em;
-  }
+.job-title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
 
-  #education-section:hover,
-  #experience-section:hover,
-  #skills-section:hover {
-    transform: scale(1.06);
-    background-color: rgb(22, 39, 91, .9);
-  }
+li, i {
+  font-weight: normal;
 }
 
 .resume-download {
@@ -53,3 +44,77 @@
   transform: scale(1.5);
   background-color: red;
 }
+
+.skill-title {
+  font-weight: 600;
+  /* text-decoration: underline; */
+  text-align: center;
+  border-bottom: solid 2px;
+  padding-bottom: .2em;
+}
+
+.all-skills {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: space-evenly;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  /* margin-right: 3em; */
+  /* height: 75%; */
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: normal;
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+  align-items: center;
+  margin-left: -2em;
+  margin-bottom: 3em;
+  height: 75%;
+}
+
+#fields-list {
+  margin: -8px 0px 32px -32px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+  .resume-card {
+    margin-left: 1em;
+  }
+
+  .resume-card:hover {
+    transform: scale(1.06);
+    background-color: rgb(22, 39, 91, .9);
+  }
+
+  .all-skills {
+    flex-wrap: wrap;
+    margin-right: 0;
+  }
+
+  /* .skills {
+    width: 100%;
+  } */
+
+  .skills-list {
+    margin-left: -3.5em;
+  }
+}
+
+@media screen and (max-width: 409px) {
+  .skills {
+    width: 100%;
+
+    /* margin: -.5em; */
+  }
+}
+
+/* @media screen and (max-width: 392px) {
+  .skills {
+    margin: -.8em;
+  }
+} */
