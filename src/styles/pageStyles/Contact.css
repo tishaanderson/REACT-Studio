@@ -1,4 +1,9 @@
 .contact {
+  margin-top: 1em;
+  bottom: 5em;
+}
+
+.flex-box {
   display: flex;
   flex-wrap: wrap;
 }
@@ -7,6 +12,7 @@
 .socials-check {
   margin-right: .5em;
   flex: 1;
+  /* height: 75%; */
 }
 
 .job-search,
@@ -16,9 +22,20 @@
   border-radius: 1.5em;
 }
 
-.job-interest {
-  margin: 1em;
+.job-search {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+}
+
+.job-interest {
+  margin-bottom: 1em;
+}
+
+#first-interest {
+  margin-top: .5em;
 }
 
 .socials-title {
@@ -32,8 +49,22 @@
 
 .social-icons {
   margin-left: 1em;
-  margin-top: .2em;
+  margin-top: .5em;
   font-size: 2em;
+  text-align: center;
+}
+
+.social-icons a {
+  transition: font-size .2s ease-in-out;
+}
+
+.social-icons a:hover {
+  font-size: 1.5em;
+}
+
+.arrow {
+  /* margin-top: -20%; */
+  height: 75%;
 }
 
 .contact-box {
@@ -43,19 +74,32 @@
 
 form {
   border-radius: 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#form-section {
+  margin-left: .5em;
 }
 
 .contactMe {
   margin-top: .3em;
+  padding-top: .5em;
 }
 
 .messageMe {
   text-decoration: underline;
 }
 
+#contact-text {
+  padding: 0 .5em;
+}
+
 .thanks {
   text-align: center;
   margin-bottom: -1em;
+  padding: 0 .5em;
 }
 
 .sendButton {
@@ -75,14 +119,13 @@ form {
     transform: rotate(90deg);
   }
 
-  .job-search,
-  .socials-check {
-    margin: .2em;
+  .social-icons {
+    margin-left: .1em;
   }
 
-  .social-icons {
-    margin-left: .5em;
-  }
+  form {
+    text-align: center;
+}
 }
 
 

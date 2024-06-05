@@ -96,25 +96,28 @@ li, i {
     margin-right: 0;
   }
 
-  /* .skills {
-    width: 100%;
-  } */
-
   .skills-list {
     margin-left: -3.5em;
+  }
+
+  #personal-list {
+    width: 96%;
   }
 }
 
 @media screen and (max-width: 409px) {
   .skills {
     width: 100%;
-
-    /* margin: -.5em; */
   }
 }
 
-/* @media screen and (max-width: 392px) {
-  .skills {
-    margin: -.8em;
+@media screen and (max-width: 345px){
+  #personal-list {
+    width: 125%;
   }
-} */
+
+  #programming-list {
+    justify-content: space-between;
+    width: 100%;
+  }
+}

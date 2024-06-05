@@ -7,8 +7,7 @@ function Footer() {
       <div className="footer-icons">
         <a
           href="https://www.linkedin.com/in/tisha-anderson"
-          className="fa icon socials linkedin"
-          id="linkedin-icon"
+          className="fa icon footer-socials linkedin"
           alt="LinkedIn Icon"
         >
           <FaLinkedin />
@@ -16,8 +15,7 @@ function Footer() {
 
         <a
           href="https://github.com/tishaanderson?tab=repositories"
-          className="fa icon socials github"
-          id="github-icon"
+          className="fa icon footer-socials github"
           alt="Github Icon"
         >
           <FaGithub />
@@ -25,8 +23,7 @@ function Footer() {
 
         <a
           href="https://www.instagram.com/curlyqtish/"
-          className="fa icon socials instagram"
-          id="instagram-icon"
+          className="fa icon footer-socials instagram"
           alt="Instagram Icon"
         >
           <FaInstagram />

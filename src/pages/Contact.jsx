@@ -78,28 +78,32 @@ export default function Contact() {
       href: "https://www.linkedin.com/in/tisha-anderson",
       alt: "LinkedIn Icon",
       icon: <FaLinkedin />,
+      id: "linkedin-icon"
     },
     {
       href: "https://github.com/tishaanderson?tab=repositories",
       alt: "Github Icon",
       icon: <FaGithub />,
+      id: "github-icon"
     },
     {
       href: "https://www.instagram.com/sweet.tea91/",
       alt: "Instagram Icon",
       icon: <FaInstagram />,
+      id: "instagram-icon"
     },
   ];
 
   return (
     <div className="contact">
-      <div className="job-search">
-        <p className="job-interest">🐚 Interested in full-time, remote junior developer roles.</p>
+      <div className="flex-box">
+        <div className="job-search">
+        <p className="job-interest" id="first-interest">🐚 Interested in full-time, remote junior developer roles.</p>
         <p className="job-interest">
           🦀 Certified in full-stack web development -- willing to do both
           front-end or back-end.
         </p>
-        <p className="job-interest">🐬 Also, open to freelance opportunities.</p>
+        <p className="job-interest" id="last-interest">🐬 Also, open to freelance opportunities.</p>
       </div>
 
       <div className="socials-check">
@@ -114,6 +118,7 @@ export default function Contact() {
                 href={social.href}
                 className="fa icon"
                 alt={social.alt}
+                id={social.id}
               >
                 {social.icon}
               </a>
@@ -127,7 +132,8 @@ export default function Contact() {
         </div>
       </div>
 
-      <div></div>
+      </div>
+      
 
       <section className="contact-box">
         <h2
