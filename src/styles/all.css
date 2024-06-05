@@ -13,11 +13,13 @@ body {
 .row {
   width: 100%;
   padding: 20px;
+  padding-bottom: 0;
 }
 
 @media screen and (max-width: 323px) {
   .row {
     padding-left: 10px;
+    margin-right: 0;
   }
 }
 
@@ -25,4 +27,5 @@ main {
   display: flex;
   flex-wrap: wrap;
   padding-top: 2rem;
+  padding-bottom: 3em;
 }

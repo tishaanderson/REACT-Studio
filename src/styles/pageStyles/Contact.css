@@ -1,6 +1,7 @@
 .contact {
   margin-top: 1em;
   bottom: 5em;
+  /* margin-left: 1.5em; */
 }
 
 .flex-box {
@@ -70,6 +71,7 @@
 .contact-box {
   margin-top: .5em;
   margin-left: .6em;
+  /* margin-right: .8em; */
 }
 
 form {
@@ -80,7 +82,7 @@ form {
 }
 
 #form-section {
-  margin-left: .5em;
+  margin-left: .1em;
 }
 
 .contactMe {

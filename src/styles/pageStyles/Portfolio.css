@@ -1,8 +1,12 @@
 .portfolio {
   border-radius: 2em;
-  transform: rotate(5deg);
+  /* transform: rotate(5deg); */
   margin-top: 1em;
   animation: slideIn .5s ease-out;
+}
+
+.card-info {
+  border-radius: 2em;
 }
 
 @keyframes slideIn {
@@ -24,5 +28,6 @@
 }
 
 .coding-info {
-  width: 75%;
+  /* width: 75%; */
+  border-radius: .5em;
 }
