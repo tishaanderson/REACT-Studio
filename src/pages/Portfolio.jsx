@@ -2,7 +2,7 @@ import codingGame from "../images/Coding-Quiz-Game.png";
 import dailyPlanner from "../images/work-planner.png";
 import project1 from "../images/Taste-Buds-Unite.png";
 import plantPal from "../images/plantPal4.png";
-import intensity from "../images/intensity3.png";
+import intensity from "../images/Intensity3.png";
 
 import '../styles/pageStyles/Portfolio.css';
 
