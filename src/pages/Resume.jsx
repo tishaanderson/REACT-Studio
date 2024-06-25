@@ -1,4 +1,4 @@
-import resume from "../../public/TishaAndersonResume.pdf";
+import resume from "/TishaAndersonResume.pdf";
 import "../styles/pageStyles/Resume.css";
 
 export default function Resume() {
